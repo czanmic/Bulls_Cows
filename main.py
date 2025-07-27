@@ -27,7 +27,6 @@ def is_valid(guess):
     If conditions are not met, it returns warrning and do not let you to continue.
     If conditions are met, it returns None so you can continue in the game.
     """
-
     if not guess.isdigit():
         return "Input must be numeric"
     if len(guess) != 4:
@@ -51,8 +50,7 @@ while bulls != 4:
               Enter a number:
               """)
     
-    # calling the function is_valid.
-    # if error then it shows the error message from function and exit the game
+    # if error then it shows the error message from def is_valid function
     error = is_valid(guess) 
     if error: 
         print(error) 
